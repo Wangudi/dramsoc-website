@@ -30,7 +30,7 @@ function Footer() {
           <h4 style={{ marginTop: '20px', marginBottom: '10px' }}>Follow Us</h4>
           <div className="footer-social-buttons">
             <a 
-              href="https://instagram.com/dramsoc_su" 
+              href="https://instagram.com/strathmore.drama.society" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="footer-social-button instagram-button"
@@ -52,7 +52,7 @@ function Footer() {
               </svg>
             </a>
             <a 
-              href="https://tiktok.com/@dramsoc_su" 
+              href="https://tiktok.com/@strathmore.drama.society" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="footer-social-button tiktok-button"
