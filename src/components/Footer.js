@@ -41,7 +41,7 @@ function Footer() {
               </svg>
             </a>
             <a 
-              href="https://youtube.com/@strathmore.drama.society" 
+              href="https://youtube.com/@StrathmoreDramaSociety" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="footer-social-button youtube-button"
