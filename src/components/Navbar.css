@@ -42,47 +42,112 @@
 
 .nav-menu {
   display: flex;
+  flex-direction: row;
   align-items: center;
   list-style: none;
   text-align: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-item {
-  height: 80px;
+  height: auto;
 }
 
-.nav-links {
+/* New horizontal button styling for navigation links */
+.nav-button {
   color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  transition: all 0.3s ease;
-}
-
-.nav-links:hover {
-  color: #FFD700;
-  border-bottom: 4px solid #FFD700;
-}
-
-.nav-links-btn {
-  background-color: #B80000;
-  color: white;
+  background-color: rgba(255, 215, 0, 0.1);
+  border: 2px solid transparent;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 500;
   transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  color: #1a1a1a;
+  background-color: #FFD700;
+  border-color: #FFD700;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+/* CTA button styling for Join Us */
+.nav-button-cta {
+  background: linear-gradient(135deg, #B80000, #8B0000);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid #B80000;
+  white-space: nowrap;
+}
+
+.nav-button-cta:hover {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #1a1a1a;
+  border-color: #FFD700;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(184, 0, 0, 0.5);
+}
+
+/* Social media branded buttons */
+.social-media-buttons {
   display: flex;
+  flex-direction: row;
+  gap: 12px;
   align-items: center;
 }
 
-.nav-links-btn:hover {
-  background-color: #FFD700;
-  color: #111111;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(184,0,0,0.5);
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.instagram-button {
+  background: linear-gradient(135deg, #833AB4, #E1306C, #FD1D1D);
+  color: white;
+}
+
+.instagram-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(131, 58, 180, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.youtube-button {
+  background: #FF0000;
+  color: white;
+}
+
+.youtube-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tiktok-button {
+  background: linear-gradient(135deg, #000000, #00f2ea);
+  color: white;
+}
+
+.tiktok-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .menu-icon {
@@ -92,6 +157,7 @@
   cursor: pointer;
 }
 
+/* Mobile responsive */
 @media screen and (max-width: 960px) {
   .navbar-container {
     padding: 0 30px;
@@ -108,6 +174,7 @@
     transition: all 0.5s ease;
     background-color: #1a1a1a;
     border-top: 3px solid #B80000;
+    gap: 0;
   }
 
   .nav-menu.active {
@@ -117,27 +184,31 @@
     z-index: 1;
   }
 
-  .nav-links, .nav-links-btn {
+  .nav-button,
+  .nav-button-cta {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
-    display: table;
+    display: block;
+    border-radius: 0;
     border-bottom: 1px solid #B80000;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   }
 
-  .nav-links:hover {
+  .nav-button:hover {
     background-color: #B80000;
     color: #FFD700;
-    border-bottom: 1px solid #B80000;
+    transform: none;
   }
 
-  .nav-links-btn {
-    background-color: transparent;
-    border-radius: 0;
+  .nav-button-cta {
+    background: #B80000;
   }
 
-  .nav-links-btn:hover {
-    background-color: #B80000;
+  .nav-button-cta:hover {
+    background-color: #8B0000;
     transform: none;
   }
 
@@ -147,5 +218,9 @@
 
   .nav-item {
     height: auto;
+  }
+
+  .social-media-buttons {
+    display: none;
   }
 }
