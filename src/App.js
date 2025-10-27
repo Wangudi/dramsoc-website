@@ -12,7 +12,6 @@ import Alumni from './pages/Alumni';
 import Articles from './pages/Articles';
 import Contact from './pages/Contact';
 import JoinUs from './pages/JoinUs';
-import Partners from './pages/Partners';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
           <Route path="/articles" element={<Articles />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/join" element={<JoinUs />} />
-          <Route path="/partners" element={<Partners />} />
         </Routes>
         <Footer />
       </div>
