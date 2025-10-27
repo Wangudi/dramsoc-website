@@ -22,9 +22,16 @@
   padding: 0 50px;
 }
 
+/* New wrapper to hold logo and nav horizontally */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
 .navbar-logo {
   color: #FFD700;
-  justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -33,6 +40,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  flex-shrink: 0;
 }
 
 .navbar-logo:hover {
@@ -47,13 +55,15 @@
   list-style: none;
   text-align: center;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
   height: auto;
 }
 
-/* New horizontal button styling for navigation links */
+/* Navigation button styling - visually pleasing with gold theme */
 .nav-button {
   color: #FFFFFF;
   background-color: rgba(255, 215, 0, 0.1);
@@ -73,28 +83,6 @@
   border-color: #FFD700;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
-}
-
-/* CTA button styling for Join Us */
-.nav-button-cta {
-  background: linear-gradient(135deg, #B80000, #8B0000);
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-  border: 2px solid #B80000;
-  white-space: nowrap;
-}
-
-.nav-button-cta:hover {
-  background: linear-gradient(135deg, #FFD700, #FFA500);
-  color: #1a1a1a;
-  border-color: #FFD700;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(184, 0, 0, 0.5);
 }
 
 /* Social media branded buttons */
@@ -163,6 +151,10 @@
     padding: 0 30px;
   }
 
+  .navbar-content {
+    width: 100%;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -184,8 +176,7 @@
     z-index: 1;
   }
 
-  .nav-button,
-  .nav-button-cta {
+  .nav-button {
     text-align: center;
     padding: 1.5rem;
     width: 100%;
@@ -200,15 +191,6 @@
   .nav-button:hover {
     background-color: #B80000;
     color: #FFD700;
-    transform: none;
-  }
-
-  .nav-button-cta {
-    background: #B80000;
-  }
-
-  .nav-button-cta:hover {
-    background-color: #8B0000;
     transform: none;
   }
 
