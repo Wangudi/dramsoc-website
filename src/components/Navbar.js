@@ -77,7 +77,7 @@ function Navbar() {
             className="navbar-logo"
             onClick={() => { scrollToTop(); setIsOpen(false); }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <img
                 src={process.env.PUBLIC_URL + '/images/No%20background%20white%20logo.png'}
                 alt="DRAMSOC Logo"
@@ -101,9 +101,9 @@ function Navbar() {
             }}
           >
             <span style={{ display: 'flex', flexDirection: 'column', gap: '4px', width: '24px' }}>
-              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', width: '100%', height: '2px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', width: '100%', height: '2px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', width: '100%', height: '2px', background: 'currentColor', margin: 0 }}></span>
             </span>
           </button>
         </div>
@@ -130,12 +130,12 @@ function Navbar() {
           }}
         >
           {/* Mirror of Footer quicklinks. Do not change order/colors; just list the same sections */}
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             <li style={{ marginBottom: '12px' }}>
-              <button onClick={handleHomeClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>Home</button>
+              <button onClick={handleHomeClick} style={{ background: 'transparent', border: 'none', color: '#fff', textDecoration: 'none', cursor: 'pointer', fontSize: '16px', padding: 0, textAlign: 'left', width: '100%' }}>Home</button>
             </li>
             <li style={{ marginBottom: '12px' }}>
-              <button onClick={handleAboutClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>About Us</button>
+              <button onClick={handleAboutClick} style={{ background: 'transparent', border: 'none', color: '#fff', textDecoration: 'none', cursor: 'pointer', fontSize: '16px', padding: 0, textAlign: 'left', width: '100%' }}>About Us</button>
             </li>
             <li style={{ marginBottom: '12px' }}>
               <Link to="/team" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Team</Link>
