@@ -10,6 +10,8 @@ function Productions() {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, []);
 
@@ -26,7 +28,6 @@ function Productions() {
         />
       ));
     }
-
     return null;
   };
 
@@ -37,7 +38,31 @@ function Productions() {
         <p>Bringing Stories to Life on Stage</p>
       </section>
       
-      <section className="section">
+      {/* About Us Section - Between Hero and Productions */}
+      <section className="section" id="about-preview" style={{backgroundColor: '#1a1a1a', padding: '60px 20px'}}>
+        <h2 style={{textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '30px'}}>About Us</h2>
+        <p style={{textAlign: 'center', color: '#fff', lineHeight: '1.8', maxWidth: '900px', margin: '0 auto'}}>
+          Strathmore Drama Society (DRAMSOC) is the premier theatrical organization at Strathmore University,
+          dedicated to fostering artistic excellence, creative expression, and theatrical innovation. We bring together
+          talented students and passionate mentors to create unforgettable performances.
+        </p>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', margin: '40px auto', maxWidth: '1200px'}}>
+          <div style={{background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px'}}>
+            <h3 style={{color: '#FFD700', marginTop: 0}}>Our Mission</h3>
+            <p style={{color: '#ccc', margin: 0}}>To nurture talent, produce world-class productions, and use drama to educate and inspire.</p>
+          </div>
+          <div style={{background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px'}}>
+            <h3 style={{color: '#FFD700', marginTop: 0}}>Our Vision</h3>
+            <p style={{color: '#ccc', margin: 0}}>To be East Africa's leading university drama society, known for excellence and innovation.</p>
+          </div>
+          <div style={{background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px'}}>
+            <h3 style={{color: '#FFD700', marginTop: 0}}>Our Motto</h3>
+            <p style={{color: '#ccc', margin: 0}}>"Where Stories Come Alive"</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="productions">
         <h2 style={{textAlign: 'center', marginBottom: '40px'}}>Upcoming & Recent Productions</h2>
         
         {/* The Waiting Room */}
