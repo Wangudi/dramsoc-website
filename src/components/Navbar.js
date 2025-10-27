@@ -38,13 +38,13 @@ function Navbar() {
                   filter: 'drop-shadow(0 2px 4px rgba(255,215,0,0.3))'
                 }}
               />
-              <span style={{ color: '#FFD700', fontSize: '24px', fontWeight: 'bold' }}>DRAMSOC</span>
+              <span style={{ color: '#FFD700', fontSize: '1.8rem', fontWeight: 'bold' }}>DRAMSOC</span>
             </div>
           </Link>
-
+          
           {/* Mobile Menu Icon */}
           <div className="menu-icon" onClick={toggleMenu}>
-            <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
+            <i className={isOpen ? 'fa fa-times' : 'fa fa-bars'}></i>
           </div>
 
           {/* Navigation Buttons - Horizontal beside logo */}
@@ -114,7 +114,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-
+        
         {/* Social Media Icons - Branded buttons with horizontal layout */}
         <div className="social-media-buttons">
           <a
@@ -129,7 +129,7 @@ function Navbar() {
             </svg>
           </a>
           <a
-            href="https://youtube.com/@DRAMSOCStraUniv"
+            href="https://youtube.com/@strathmore.drama.society"
             target="_blank"
             rel="noopener noreferrer"
             className="social-button youtube-button"
