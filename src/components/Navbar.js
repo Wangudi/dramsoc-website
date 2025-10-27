@@ -53,9 +53,9 @@ function Navbar() {
             }}
           >
             <span style={{ display: 'flex', flexDirection: 'column', gap: '4px', width: '24px' }}>
-              <span style={{ display: 'block', height: '2px', background: '#FFD700', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '2px', background: '#FFD700', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '2px', background: '#FFD700', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
             </span>
           </button>
         </div>
@@ -102,9 +102,6 @@ function Navbar() {
               <Link to="/alumni" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Alumni</Link>
             </li>
             <li style={{ marginBottom: 12 }}>
-              <Link to="/partners" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Partners</Link>
-            </li>
-            <li style={{ marginBottom: 12 }}>
               <Link to="/articles" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Articles</Link>
             </li>
             <li style={{ marginBottom: 12 }}>
@@ -117,7 +114,8 @@ function Navbar() {
         </div>
       )}
 
-      <style>{`
+      <style>
+        {`
         @keyframes slideIn {
           from {
             transform: translateX(100%);
@@ -128,7 +126,8 @@ function Navbar() {
             opacity: 1;
           }
         }
-      `}</style>
+      `}
+      </style>
     </nav>
   );
 }
