@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>
       <div className="navbar-container">
         {/* Logo and Navigation in one row */}
         <div className="navbar-content">
@@ -38,12 +38,12 @@ function Navbar() {
                   filter: 'drop-shadow(0 2px 4px rgba(255,215,0,0.3))'
                 }}
               />
-              <span style={{ color: '#FFD700', fontSize: '1.8rem', fontWeight: 'bold' }}>DRAMSOC</span>
+              <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#FFD700' }}>DRAMSOC</span>
             </div>
           </Link>
           
           {/* Mobile Menu Icon */}
-          <div className="menu-icon" onClick={toggleMenu}>
+          <div className="menu-icon" onClick={toggleMenu} style={{ cursor: 'pointer', zIndex: 1001 }}>
             <i className={isOpen ? 'fa fa-times' : 'fa fa-bars'}></i>
           </div>
 
@@ -129,7 +129,7 @@ function Navbar() {
             </svg>
           </a>
           <a
-            href="https://youtube.com/@strathmore.drama.society"
+            href="https://youtube.com/@StrathmoreDramaSociety"
             target="_blank"
             rel="noopener noreferrer"
             className="social-button youtube-button"
