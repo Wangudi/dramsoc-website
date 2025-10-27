@@ -26,6 +26,7 @@ function Productions() {
         />
       ));
     }
+
     return null;
   };
 
@@ -45,7 +46,18 @@ function Productions() {
           
           {/* Image Gallery for The Waiting Room */}
           <div style={{marginBottom: '20px'}}>
-            {renderProductionImages('The Waiting Room', ['The Waiting Room (7).jpg'])}
+            {renderProductionImages('The Waiting Room', [
+              'The Waiting Room (2).jpg',
+              'The Waiting Room (3).jpg',
+              'The Waiting Room (4).jpg',
+              'The Waiting Room (5).jpg',
+              'The Waiting Room (6).jpg',
+              'The Waiting Room (7).jpg',
+              'The Waiting Room (8).jpg',
+              'The Waiting Room (9).jpg',
+              'The Waiting Room (10).jpg',
+              'The Waiting Room (11).jpg'
+            ])}
           </div>
           
           <h4>September 2025</h4>
@@ -59,7 +71,17 @@ function Productions() {
           
           {/* Image Gallery for The Samaritan */}
           <div style={{marginBottom: '20px'}}>
-            {renderProductionImages('The Samaritan', ['The Samaritan (6).jpg'])}
+            {renderProductionImages('The Samaritan', [
+              'The Samaritan (1).jpg',
+              'The Samaritan (2).jpg',
+              'The Samaritan (3).jpg',
+              'The Samaritan (4).jpg',
+              'The Samaritan (5).jpg',
+              'The Samaritan (6).jpg',
+              'The Samaritan (7).jpg',
+              'The Samaritan (8).jpg',
+              'The Samaritan (9).jpg'
+            ])}
           </div>
           
           <h4>November 2025</h4>
@@ -84,8 +106,8 @@ function Productions() {
           </div>
           
           <h4>March 2024</h4>
-          <p>Harold Pinter's "The Homecoming" is a masterpiece of modern theater that explores family dynamics, power struggles, and the complexities of human relationships. This darkly comic drama follows Teddy, a philosophy professor, who returns home to London with his wife Ruth after six years in America.</p>
-          <p>What begins as a simple family reunion quickly evolves into a psychological battleground where nothing is as it seems. Pinter's trademark pauses, silences, and subtext create an atmosphere of tension and ambiguity that keeps audiences on edge throughout the performance.</p>
+          <p>"The Homecoming" is a powerful Kenyan play by acclaimed playwright Martin Abuya. This compelling drama explores the complexities of returning home after years away, examining themes of identity, family dynamics, and the tension between tradition and modernity in contemporary Kenyan society.</p>
+          <p>Through authentic storytelling and rich character development, Abuya crafts a narrative that resonates with anyone who has experienced the bittersweet nature of homecoming. The play masterfully portrays the challenges of reconciling one's past with the present, making it a deeply moving theatrical experience that speaks to universal human experiences within a distinctly Kenyan context.</p>
         </div>
         
       </section>
