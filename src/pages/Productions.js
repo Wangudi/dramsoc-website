@@ -14,38 +14,26 @@ function Productions() {
         <div className="production-card">
           <h3>The Waiting Room</h3>
           <h4>September 2025</h4>
-          <p><strong>Genre:</strong> Contemporary Drama</p>
-          <p><strong>Synopsis:</strong> A gripping exploration of human patience, hope, and the stories we tell while waiting. Set in a mysterious waiting room where time seems suspended, strangers from different walks of life find themselves brought together by fate. As they wait for an unknown purpose, secrets are revealed, relationships are tested, and each character confronts their past while grappling with an uncertain future.</p>
-          <p><strong>Themes:</strong> Patience, Hope, Human Connection, Existentialism, Time, Fate, Identity</p>
-          <p><strong>Why Watch:</strong> This original production promises to be a thought-provoking exploration of the human condition. With stunning performances, atmospheric staging, and a script that delves deep into the psychology of waiting, this is theatrical storytelling at its finest. Each character's story unfolds like layers of an onion, revealing the beautiful complexity of human nature.</p>
-          <p><strong>Production Team:</strong> Director: TBA | Stage Manager: TBA | Cast: TBA</p>
+          <p><strong>Playwright:</strong> Martin Abuya</p>
+          <p><strong>Director:</strong> Nick Muthama</p>
+          <p><strong>Genre:</strong> Dramatic Comedy (Dramedy)</p>
+          <p><strong>Run Time:</strong> 1 Hour 45 Minutes</p>
+          <p><strong>Synopsis:</strong> In a chaotic hospital waiting room, tensions mount as anxious relatives await news about a critically injured patriarch. Secrets unravel, misunderstandings abound, and comedic yet dramatic confrontations ensue. Amidst the chaos, unexpected twists reveal hidden lives and shocking truths, weaving a thrilling tale of identity, deception, and the unpredictable nature of family bonds.</p>
+          <p><strong>Themes:</strong> Family Dynamics, Identity, Deception, Healthcare System, Social Commentary, Human Nature</p>
+          <p><strong>Why Watch:</strong> This original production promises to be a thought-provoking exploration of family, healthcare, and the unexpected revelations that emerge in moments of crisis. With stunning performances, sharp dialogue, and a script that masterfully balances comedy and drama, this is theatrical storytelling at its finest.</p>
           <p><em>Images and additional details will be added closer to the performance dates</em></p>
         </div>
 
         <div className="production-card">
           <h3>The Homecoming</h3>
           <h4>April 2025</h4>
-          <p><strong>Playwright:</strong> Harold Pinter</p>
-          <p><strong>Genre:</strong> Psychological Drama / Dark Comedy</p>
-          <p><strong>Synopsis:</strong> Harold Pinter's masterpiece of menace and psychological tension. When Teddy, a philosophy professor, returns home with his wife Ruth after six years in America, the reunion with his working-class London family becomes a battleground of power, sexuality, and family dynamics. In a house dominated by the tyrannical patriarch Max, his brother Sam, and Teddy's brothers Lenny and Joey, Ruth's presence disrupts the established order, leading to shocking revelations and disturbing power plays.</p>
-          <p><strong>Themes:</strong> Masculinity, Power, Sexuality, Family Dynamics, Possession, Primal Instincts, Class Conflict, Identity</p>
-          <p><strong>Why Watch:</strong> Pinter's darkly comic masterpiece is renowned for its unsettling pauses, ambiguous dialogue, and the menace lurking beneath civilized surfaces. Our production captures the raw intensity and psychological complexity that has made this play a modern classic. Experience the tension as Ruth transforms from newcomer to power player, turning the family's expectations upside down in ways that are simultaneously disturbing and mesmerizing.</p>
-          <p><strong>Awards:</strong> The original production won the Tony Award for Best Play and is considered one of the greatest plays of the 20th century</p>
-          <p><strong>Production Team:</strong> Director: TBA | Stage Manager: TBA | Cast: TBA</p>
+          <p><strong>Playwright:</strong> Martin Abuya</p>
+          <p><strong>Director:</strong> Nick Muthama</p>
+          <p><strong>Genre:</strong> Tragic Comedy</p>
+          <p><strong>Synopsis:</strong> When three adult children return home for what they believe is a family reunion, they discover their father has passed away just days before. Set in Mrs. Talai's house on the outskirts of Nairobi, this powerful drama explores grief, regret, and the complex relationships between parents and children who have drifted apart. As secrets are revealed and old wounds reopened, the family must confront uncomfortable truths about love, duty, and what it means to truly come home.</p>
+          <p><strong>Themes:</strong> Family, Grief, Reconciliation, Parent-Child Relationships, Homecoming, Regret, Forgiveness, Identity</p>
+          <p><strong>Why Watch:</strong> This original Kenyan production captures the universal experience of family dynamics while being deeply rooted in contemporary African life. With its blend of tragedy and comedy, the play offers both laughter and tears, creating a deeply moving theatrical experience that resonates with anyone who has ever struggled with family expectations and the meaning of home.</p>
           <p><em>Images and rehearsal photos will be added as production progresses</em></p>
-        </div>
-
-        <div className="production-card">
-          <h3>The Samaritan</h3>
-          <h4>2024</h4>
-          <p><strong>Playwright:</strong> John Lara</p>
-          <p><strong>Genre:</strong> Contemporary African Drama</p>
-          <p><strong>Synopsis:</strong> A powerful exploration of corruption, technology, and redemption in modern Kenya. The story follows Nicole, a brilliant student who creates a revolutionary mobile app called "The Samaritan" designed to expose and combat corruption. When her app goes viral and begins to threaten powerful corrupt officials, she finds herself in danger. The play explores themes of digital activism, the cost of standing up for justice, and the moral complexities of fighting corruption in a society where power and money often speak louder than truth.</p>
-          <p><strong>Themes:</strong> Corruption, Technology, Youth Empowerment, Social Justice, Morality, Redemption, Digital Activism, Contemporary Kenya</p>
-          <p><strong>Our Production:</strong> Our 2024 production of "The Samaritan" was one of our most successful and relevant stagings. The play resonated deeply with our Kenyan audience, sparking conversations about corruption, youth leadership, and the role of technology in social change. Our cast delivered outstanding performances that brought authenticity and emotional depth to this locally-relevant narrative. The staging incorporated multimedia elements that enhanced the technological themes, while maintaining the intimate human drama at the story's core.</p>
-          <p><strong>Impact:</strong> This production sparked important discussions about corruption and civic responsibility within the Strathmore community and beyond. Post-show discussions featured guest speakers on anti-corruption initiatives and technology for social good.</p>
-          <p><strong>Production Team:</strong> Director: TBA | Stage Manager: TBA | Cast featured exceptional student actors who brought depth to their roles</p>
-          <p><em>Photos and videos from the 2024 production will be added to showcase our talented cast and creative staging</em></p>
         </div>
 
         <div className="production-card">
