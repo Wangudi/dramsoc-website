@@ -29,81 +29,56 @@ function Home() {
       {/* Dashboard Buttons Section - Horizontal Layout */}
       <section className="dashboard-section" style={{ padding: '40px 20px', backgroundColor: '#111' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px', maxWidth: '1200px', margin: '0 auto' }}>
-          <Link to="/productions#productions" style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
+          <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
             <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
               <span style={{ fontSize: '1.5rem' }}>🎭</span>
               <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Productions</h3>
             </div>
           </Link>
-
-          <Link to="/team" style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
+          <Link to="/team" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
             <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
               <span style={{ fontSize: '1.5rem' }}>👥</span>
               <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Our Team</h3>
             </div>
           </Link>
-
-          <Link to="/join" style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
+          <Link to="/gallery" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
             <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-              <span style={{ fontSize: '1.5rem' }}>✨</span>
-              <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Join Us</h3>
+              <span style={{ fontSize: '1.5rem' }}>📸</span>
+              <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Gallery</h3>
+            </div>
+          </Link>
+          <Link to="/contact" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
+            <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '1.5rem' }}>📧</span>
+              <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Contact Us</h3>
             </div>
           </Link>
         </div>
       </section>
 
-      {/* Upcoming Plays/Events Section */}
-      <section className="section" id="upcoming-events" style={{ padding: '60px 20px', backgroundColor: '#111', scrollMarginTop: '80px' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '20px', color: '#FFD700', fontSize: '2rem' }}>Upcoming Plays/Events</h2>
-        <div style={{ textAlign: 'center', padding: '10px', color: '#fff', fontSize: '1.1rem' }}>
-          No updates at the moment. Please check back soon!
-        </div>
-      </section>
-
-      {/* About Us (inserted between Upcoming Plays/Events and Our Productions) */}
-      <section className="section" id="about-preview" style={{ padding: '60px 20px', backgroundColor: '#1a1a1a' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '20px', color: '#FFD700', fontSize: '2rem' }}>About Us</h2>
-        <p style={{ textAlign: 'center', color: '#fff', lineHeight: '1.8', maxWidth: '900px', margin: '0 auto' }}>
-          Strathmore Drama Society (DRAMSOC) is the premier theatrical organization at Strathmore University,
-          dedicated to fostering artistic excellence, creative expression, and theatrical innovation. We bring together
-          talented students and passionate mentors to create unforgettable performances.
-        </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', margin: '40px auto', maxWidth: '1200px' }}>
-          <div style={{ background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px' }}>
-            <h3 style={{ color: '#FFD700', marginTop: 0 }}>Our Mission</h3>
-            <p style={{ color: '#ccc', margin: 0 }}>To nurture talent, produce world-class productions, and use drama to educate and inspire.</p>
+      {/* About Us Section */}
+      <section id="about" className="about-section" style={{ padding: '60px 20px', backgroundColor: '#1a1a1a' }}>
+        <h2 style={{ textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px' }}>About Us</h2>
+        <div style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#fff' }}>
+          <div style={{ marginBottom: '30px' }}>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Mission</h3>
+            <p style={{ color: '#ccc', fontSize: '1.1rem' }}>to enhance and encourage teamwork, improve the quality of life by building, developing and nurturing talent through social, theatrical and community life at large.</p>
           </div>
-          <div style={{ background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px' }}>
-            <h3 style={{ color: '#FFD700', marginTop: 0 }}>Our Vision</h3>
-            <p style={{ color: '#ccc', margin: 0 }}>To be East Africa's leading university drama society, known for excellence and innovation.</p>
+          <div style={{ marginBottom: '30px' }}>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Vision</h3>
+            <p style={{ color: '#ccc', fontSize: '1.1rem' }}>To be a premier arts institution in Kenya and beyond, inspiring creativity, fostering cultural dialogue, and empowering individuals to use the transformative power of theatre and film for personal and societal growth.</p>
           </div>
-          <div style={{ background: 'rgba(255,215,0,0.1)', padding: '30px', borderRadius: '15px' }}>
-            <h3 style={{ color: '#FFD700', marginTop: 0 }}>Our Motto</h3>
-            <p style={{ color: '#ccc', margin: 0 }}>
-              "Where Stories Come Alive"
-            </p>
+          <div>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Motto</h3>
+            <p style={{ color: '#ccc', fontSize: '1.1rem', fontStyle: 'italic' }}>"Take it to the next level!"</p>
           </div>
         </div>
       </section>
 
-      {/* Our Productions Section with Polished Cards */}
-      <section className="section" id="productions" style={{ padding: '60px 20px', backgroundColor: '#111', scrollMarginTop: '80px' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '20px', color: '#FFD700', fontSize: '2rem' }}>Our Productions</h2>
-        <div className="card-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-          {/* The Waiting Room */}
-          <div className="card" style={{ backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s' }}>
-            <img
-              src={process.env.PUBLIC_URL + '/images/The%20Waiting%20Room%20(7).jpg'}
-              alt="The Waiting Room"
-              style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-            />
-            <div style={{ padding: '20px' }}>
-              <h3 style={{ marginBottom: '10px', color: '#FFD700' }}>The Waiting Room</h3>
-              <p style={{ lineHeight: '1.6', color: '#ccc' }}>A gripping exploration of time, patience, and human connection in life's in-between moments.</p>
-              <Link to="/productions#waiting-room" style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
-            </div>
-          </div>
-
+      {/* Featured Productions Section */}
+      <section className="featured-productions" style={{ padding: '60px 20px', backgroundColor: '#111' }}>
+        <h2 style={{ textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px' }}>Featured Productions</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
           {/* The Homecoming */}
           <div className="card" style={{ backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s' }}>
             <img
@@ -114,7 +89,7 @@ function Home() {
             <div style={{ padding: '20px' }}>
               <h3 style={{ marginBottom: '10px', color: '#FFD700' }}>The Homecoming</h3>
               <p style={{ lineHeight: '1.6', color: '#ccc' }}>A powerful tale of family dynamics, secrets, and the complexities of returning home.</p>
-              <Link to="/productions#homecoming" style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
+              <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
             </div>
           </div>
 
@@ -128,7 +103,7 @@ function Home() {
             <div style={{ padding: '20px' }}>
               <h3 style={{ marginBottom: '10px', color: '#FFD700' }}>The Samaritan</h3>
               <p style={{ lineHeight: '1.6', color: '#ccc' }}>An inspiring story of kindness, morality, and the fight against corruption in modern society.</p>
-              <Link to="/productions#samaritan" style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
+              <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
             </div>
           </div>
         </div>
