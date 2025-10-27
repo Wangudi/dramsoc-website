@@ -55,26 +55,58 @@
   color: #FFD700;
 }
 
-.social-icons {
+/* Updated social media branded buttons */
+.footer-social-buttons {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 12px;
   margin-top: 15px;
+  align-items: center;
 }
 
-.social-icons a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 1.1rem;
-  padding: 10px 15px;
-  background-color: #B80000;
-  border-radius: 5px;
+.footer-social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  border: 2px solid transparent;
 }
 
-.social-icons a:hover {
-  background-color: #FFD700;
-  color: #111111;
-  transform: translateY(-3px);
+.footer-social-button.instagram-button {
+  background: linear-gradient(135deg, #833AB4, #E1306C, #FD1D1D);
+  color: white;
+}
+
+.footer-social-button.instagram-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(131, 58, 180, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-button.youtube-button {
+  background: #FF0000;
+  color: white;
+}
+
+.footer-social-button.youtube-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-button.tiktok-button {
+  background: linear-gradient(135deg, #000000, #00f2ea);
+  color: white;
+}
+
+.footer-social-button.tiktok-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-bottom {
@@ -95,7 +127,7 @@
     gap: 30px;
   }
 
-  .social-icons {
+  .footer-social-buttons {
     flex-wrap: wrap;
   }
 }
