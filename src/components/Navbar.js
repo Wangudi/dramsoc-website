@@ -30,6 +30,24 @@ function Navbar() {
     setQuicklinksOpen(false);
   };
 
+  const handleAboutClick = () => {
+    if (location.pathname === '/') {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+    setQuicklinksOpen(false);
+  };
+
   const handleProductionsClick = () => {
     if (location.pathname === '/') {
       const productionsSection = document.querySelector('.featured-productions');
@@ -59,7 +77,7 @@ function Navbar() {
             className="navbar-logo"
             onClick={() => { scrollToTop(); setIsOpen(false); }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <img
                 src={process.env.PUBLIC_URL + '/images/No%20background%20white%20logo.png'}
                 alt="DRAMSOC Logo"
@@ -83,9 +101,9 @@ function Navbar() {
             }}
           >
             <span style={{ display: 'flex', flexDirection: 'column', gap: '4px', width: '24px' }}>
-              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
-              <span style={{ display: 'block', height: '3px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
+              <span style={{ display: 'block', height: '2px', background: 'currentColor', margin: 0 }}></span>
             </span>
           </button>
         </div>
@@ -112,12 +130,12 @@ function Navbar() {
           }}
         >
           {/* Mirror of Footer quicklinks. Do not change order/colors; just list the same sections */}
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+          <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             <li style={{ marginBottom: '12px' }}>
               <button onClick={handleHomeClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>Home</button>
             </li>
             <li style={{ marginBottom: '12px' }}>
-              <button onClick={handleProductionsClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>Our Productions</button>
+              <button onClick={handleAboutClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>About Us</button>
             </li>
             <li style={{ marginBottom: '12px' }}>
               <Link to="/team" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Team</Link>
@@ -140,7 +158,6 @@ function Navbar() {
           </ul>
         </div>
       )}
-
       <style>{`
         @keyframes slideIn {
           from {
