@@ -20,31 +20,27 @@ function Home() {
         </div>
       </section>
 
-      {/* Dashboard Buttons Section */}
+      {/* Dashboard Buttons Section - Horizontal Layout */}
       <section className="dashboard-section" style={{padding: '40px 20px', backgroundColor: '#111'}}>
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', maxWidth: '1200px', margin: '0 auto'}}>
-          <Link to="/productions" style={{textDecoration: 'none'}}>
-            <div style={{backgroundColor: '#2d2d2d', padding: '30px', borderRadius: '15px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer'}}>
-              <h3 style={{color: '#FFD700', marginBottom: '10px', fontSize: '1.3rem'}}>🎭 Productions</h3>
-              <p style={{color: '#ccc', fontSize: '0.9rem'}}>Explore our theatrical works</p>
+        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '15px', maxWidth: '1200px', margin: '0 auto'}}>
+          <Link to="/productions" style={{textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px'}}>
+            <div style={{backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+              <span style={{fontSize: '1.5rem'}}>🎭</span>
+              <h3 style={{color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold'}}>Productions</h3>
             </div>
           </Link>
-          <Link to="/team" style={{textDecoration: 'none'}}>
-            <div style={{backgroundColor: '#2d2d2d', padding: '30px', borderRadius: '15px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer'}}>
-              <h3 style={{color: '#FFD700', marginBottom: '10px', fontSize: '1.3rem'}}>👥 Our Team</h3>
-              <p style={{color: '#ccc', fontSize: '0.9rem'}}>Meet the creative minds</p>
+          
+          <Link to="/team" style={{textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px'}}>
+            <div style={{backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+              <span style={{fontSize: '1.5rem'}}>👥</span>
+              <h3 style={{color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold'}}>Our Team</h3>
             </div>
           </Link>
-          <Link to="/partners" style={{textDecoration: 'none'}}>
-            <div style={{backgroundColor: '#2d2d2d', padding: '30px', borderRadius: '15px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer'}}>
-              <h3 style={{color: '#FFD700', marginBottom: '10px', fontSize: '1.3rem'}}>🤝 Partners</h3>
-              <p style={{color: '#ccc', fontSize: '0.9rem'}}>Our valued collaborators</p>
-            </div>
-          </Link>
-          <Link to="/join" style={{textDecoration: 'none'}}>
-            <div style={{backgroundColor: '#2d2d2d', padding: '30px', borderRadius: '15px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer'}}>
-              <h3 style={{color: '#FFD700', marginBottom: '10px', fontSize: '1.3rem'}}>✨ Join Us</h3>
-              <p style={{color: '#ccc', fontSize: '0.9rem'}}>Be part of the magic</p>
+          
+          <Link to="/join" style={{textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px'}}>
+            <div style={{backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+              <span style={{fontSize: '1.5rem'}}>✨</span>
+              <h3 style={{color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold'}}>Join Us</h3>
             </div>
           </Link>
         </div>
@@ -52,9 +48,9 @@ function Home() {
 
       {/* Upcoming Plays/Events Section */}
       <section id="upcoming-events" className="section" style={{scrollMarginTop: '80px', padding: '60px 20px', backgroundColor: '#1a1a1a'}}>
-        <h2 style={{textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '30px'}}>Upcoming Plays/Events</h2>
-        <div style={{textAlign: 'center', padding: '40px 20px', fontSize: '1.1rem', color: '#FFD700'}}>
-          <p>No updates at the moment. Please check back soon!</p>
+        <h2 style={{textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '20px'}}>Upcoming Plays/Events</h2>
+        <div style={{textAlign: 'center', padding: '40px', fontSize: '1.2rem', color: '#ccc'}}>
+          No updates at the moment. Please check back soon!
         </div>
       </section>
 
@@ -64,7 +60,7 @@ function Home() {
         <div className="card-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto'}}>
           
           {/* The Waiting Room */}
-          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 4px 20px rgba(255,215,0,0.2)'}}>
+          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s'}}>
             <img 
               src={process.env.PUBLIC_URL + '/images/The%20Waiting%20Room%20(7).jpg'} 
               alt="The Waiting Room" 
@@ -78,7 +74,7 @@ function Home() {
           </div>
 
           {/* The Homecoming */}
-          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 4px 20px rgba(255,215,0,0.2)'}}>
+          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s'}}>
             <img 
               src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(1).jpg'} 
               alt="The Homecoming" 
@@ -92,7 +88,7 @@ function Home() {
           </div>
 
           {/* The Samaritan */}
-          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', transition: 'transform 0.3s, box-shadow 0.3s', boxShadow: '0 4px 20px rgba(255,215,0,0.2)'}}>
+          <div className="card" style={{backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s'}}>
             <img 
               src={process.env.PUBLIC_URL + '/images/The%20Samaritan%20(6).jpg'} 
               alt="The Samaritan" 
@@ -115,21 +111,6 @@ function Home() {
           <img src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(4).jpg'} alt="The Homecoming Scene 4" style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px', transition: 'transform 0.3s', boxShadow: '0 4px 15px rgba(0,0,0,0.3)'}} />
           <img src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(5).jpg'} alt="The Homecoming Scene 5" style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px', transition: 'transform 0.3s', boxShadow: '0 4px 15px rgba(0,0,0,0.3)'}} />
           <img src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(6).jpg'} alt="The Homecoming Scene 6" style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px', transition: 'transform 0.3s', boxShadow: '0 4px 15px rgba(0,0,0,0.3)'}} />
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section id="partners" className="section" style={{scrollMarginTop: '80px', padding: '60px 20px', backgroundColor: '#111'}}>
-        <h2 style={{textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px'}}>Our Partners</h2>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '40px', flexWrap: 'wrap', maxWidth: '1000px', margin: '0 auto'}}>
-          <img 
-            src={process.env.PUBLIC_URL + '/images/University%20Logo-01.png'} 
-            alt="Strathmore University" 
-            style={{height: '80px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.8, transition: 'opacity 0.3s'}} 
-          />
-        </div>
-        <div style={{textAlign: 'center', marginTop: '40px'}}>
-          <Link to="/partners" style={{display: 'inline-block', padding: '12px 30px', backgroundColor: 'transparent', border: '2px solid #FFD700', color: '#FFD700', textDecoration: 'none', borderRadius: '25px', fontWeight: 'bold', transition: 'all 0.3s'}}>View All Partners</Link>
         </div>
       </section>
     </div>
