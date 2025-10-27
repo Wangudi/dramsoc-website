@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [quicklinksOpen, setQuicklinksOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,6 +18,34 @@ function Navbar() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+    }
+    setQuicklinksOpen(false);
+  };
+
+  const handleProductionsClick = () => {
+    if (location.pathname === '/') {
+      const productionsSection = document.querySelector('.featured-productions');
+      if (productionsSection) {
+        productionsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const productionsSection = document.querySelector('.featured-productions');
+        if (productionsSection) {
+          productionsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+    setQuicklinksOpen(false);
   };
 
   return (
@@ -83,39 +113,35 @@ function Navbar() {
         >
           {/* Mirror of Footer quicklinks. Do not change order/colors; just list the same sections */}
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ marginBottom: 12 }}>
-              <Link to="/" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
+            <li style={{ marginBottom: '12px' }}>
+              <button onClick={handleHomeClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>Home</button>
             </li>
-            <li style={{ marginBottom: 12 }}>
-              <Link to="/about" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>About</Link>
+            <li style={{ marginBottom: '12px' }}>
+              <button onClick={handleProductionsClick} style={{ color: '#fff', textDecoration: 'none', background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', padding: 0, textAlign: 'left', width: '100%' }}>Our Productions</button>
             </li>
-            <li style={{ marginBottom: 12 }}>
-              <Link to="/productions" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Productions</Link>
-            </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/team" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Team</Link>
             </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/departments" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Departments</Link>
             </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/alumni" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Alumni</Link>
             </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/articles" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Articles</Link>
             </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/contact" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Contact</Link>
             </li>
-            <li style={{ marginBottom: 12 }}>
+            <li style={{ marginBottom: '12px' }}>
               <Link to="/join" onClick={() => setQuicklinksOpen(false)} style={{ color: '#fff', textDecoration: 'none' }}>Join Us</Link>
             </li>
           </ul>
         </div>
       )}
 
-      <style>
-        {`
+      <style>{`
         @keyframes slideIn {
           from {
             transform: translateX(100%);
@@ -126,8 +152,7 @@ function Navbar() {
             opacity: 1;
           }
         }
-      `}
-      </style>
+      `}</style>
     </nav>
   );
 }
