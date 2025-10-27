@@ -41,12 +41,6 @@ function Home() {
               <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Our Team</h3>
             </div>
           </Link>
-          <Link to="/gallery" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
-            <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-              <span style={{ fontSize: '1.5rem' }}>📸</span>
-              <h3 style={{ color: '#FFD700', margin: 0, fontSize: '1.1rem', fontWeight: 'bold' }}>Gallery</h3>
-            </div>
-          </Link>
           <Link to="/contact" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ textDecoration: 'none', flex: '1 1 auto', minWidth: '200px', maxWidth: '280px' }}>
             <div style={{ backgroundColor: '#2d2d2d', padding: '20px 30px', borderRadius: '50px', textAlign: 'center', transition: 'transform 0.3s, box-shadow 0.3s', border: '2px solid #FFD700', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
               <span style={{ fontSize: '1.5rem' }}>📧</span>
@@ -57,28 +51,28 @@ function Home() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="about-section" style={{ padding: '60px 20px', backgroundColor: '#1a1a1a' }}>
-        <h2 style={{ textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px' }}>About Us</h2>
-        <div style={{ maxWidth: '900px', margin: '0 auto', lineHeight: '1.8', color: '#fff' }}>
+      <section className="about-section" id="about" style={{ padding: '60px 20px', backgroundColor: '#1a1a1a' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: '#FFD700', marginBottom: '40px' }}>About Us</h2>
+        <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '1.8', color: '#ccc' }}>
           <div style={{ marginBottom: '30px' }}>
-            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Mission</h3>
-            <p style={{ color: '#ccc', fontSize: '1.1rem' }}>to enhance and encourage teamwork, improve the quality of life by building, developing and nurturing talent through social, theatrical and community life at large.</p>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '10px' }}>Our Mission</h3>
+            <p style={{ fontSize: '1.1rem', color: '#ccc' }}>to enhance and encourage teamwork, improve the quality of life by building, developing and nurturing talent through social, theatrical and community life at large.</p>
           </div>
           <div style={{ marginBottom: '30px' }}>
-            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Vision</h3>
-            <p style={{ color: '#ccc', fontSize: '1.1rem' }}>To be a premier arts institution in Kenya and beyond, inspiring creativity, fostering cultural dialogue, and empowering individuals to use the transformative power of theatre and film for personal and societal growth.</p>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '10px' }}>Our Vision</h3>
+            <p style={{ fontSize: '1.1rem', color: '#ccc' }}>To be a premier arts institution in Kenya and beyond, inspiring creativity, fostering cultural dialogue, and empowering individuals to use the transformative power of theatre and film for personal and societal growth.</p>
           </div>
           <div>
-            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '15px' }}>Our Motto</h3>
-            <p style={{ color: '#ccc', fontSize: '1.1rem', fontStyle: 'italic' }}>"Take it to the next level!"</p>
+            <h3 style={{ color: '#FFD700', fontSize: '1.5rem', marginBottom: '10px' }}>Our Motto</h3>
+            <p style={{ fontSize: '1.1rem', color: '#ccc', fontStyle: 'italic' }}>"Take it to the next level!"</p>
           </div>
         </div>
       </section>
 
       {/* Featured Productions Section */}
       <section className="featured-productions" style={{ padding: '60px 20px', backgroundColor: '#111' }}>
-        <h2 style={{ textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px' }}>Featured Productions</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
+        <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: '#FFD700', marginBottom: '40px' }}>Featured Productions</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
           {/* The Homecoming */}
           <div className="card" style={{ backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s' }}>
             <img
@@ -92,7 +86,6 @@ function Home() {
               <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
             </div>
           </div>
-
           {/* The Samaritan */}
           <div className="card" style={{ backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s' }}>
             <img
@@ -106,12 +99,25 @@ function Home() {
               <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
             </div>
           </div>
+          {/* The Waiting Room */}
+          <div className="card" style={{ backgroundColor: '#2d2d2d', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 20px rgba(0,0,0,0.5)', transition: 'transform 0.3s, box-shadow 0.3s' }}>
+            <img
+              src={process.env.PUBLIC_URL + '/images/The%20Waiting%20Room.jpg'}
+              alt="The Waiting Room"
+              style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+            />
+            <div style={{ padding: '20px' }}>
+              <h3 style={{ marginBottom: '10px', color: '#FFD700' }}>The Waiting Room</h3>
+              <p style={{ lineHeight: '1.6', color: '#ccc' }}>A compelling drama that explores the human experience through the lens of anticipation and uncertainty.</p>
+              <Link to="/productions" onClick={() => { setTimeout(() => window.scrollTo(0, 0), 0); }} style={{ display: 'inline-block', marginTop: '15px', color: '#FFD700', textDecoration: 'none', fontWeight: 'bold' }}>Learn More →</Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Animated Gallery Section */}
       <section className="gallery-section" style={{ padding: '60px 20px', backgroundColor: '#1a1a1a' }}>
-        <h2 style={{ textAlign: 'center', color: '#FFD700', fontSize: '2.5rem', marginBottom: '40px' }}>Behind the Scenes</h2>
+        <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: '#FFD700', marginBottom: '40px' }}>Behind the Scenes</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
           <img src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(3).jpg'} alt="The Homecoming Scene 3" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px', transition: 'transform 0.3s', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
           <img src={process.env.PUBLIC_URL + '/images/The%20Homecoming%20(4).jpg'} alt="The Homecoming Scene 4" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px', transition: 'transform 0.3s', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }} />
