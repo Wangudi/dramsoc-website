@@ -11,7 +11,6 @@
   --maxwidth: 920px;
   --section-pad: 2.5rem;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -112,7 +111,6 @@ header, .navbar {
   font-family: 'Lora', serif;
   margin-bottom: 21px;
 }
-
 .btn, .btn-outline {
   font-family: 'Poppins', Arial, sans-serif;
   padding: 0.7em 2em;
@@ -255,7 +253,6 @@ h2, h3 {
 .footer-links a:hover {
   color: var(--white);
 }
-
 .copyright {
   color: var(--accent);
   margin-top: 7px;
@@ -276,8 +273,3 @@ h2, h3 {
   section { padding: 1.6rem 3vw;}
   .prod-card img, .team-card img { max-width: 97vw; }
 }
-
-
-
-
-
