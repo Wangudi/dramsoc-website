@@ -9,25 +9,37 @@
     <link rel="icon" href="images/dramsoc-logo.png" />
 </head>
 <body>
-    <!-- HEADER -->
-    <div class="header-bar">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" style="height: 50px; width: auto;" />
-          DRAMSOC
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutus">About Us</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#departments">Departments</a></li>
-          <li><a href="#alumni">Alumni</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#joinus">Join Us</a></li>
-        </ul>
-      </nav>
+   <header>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="logo-img">
+      <span class="nav-title">Strathmore Drama Society</span>
     </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#productions">Productions</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#alumni">Alumni</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#join">Join Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="hero-logo">
+    <h1 class="hero-heading">Take It to the Next Level!</h1>
+    <p class="hero-subheading">Where stories come alive at Strathmore University</p>
+    <div class="hero-cta">
+      <a href="#productions" class="btn btn-hero">View Productions</a>
+      <a href="#join" class="btn btn-outline">Join Us</a>
+    </div>
+  </div>
+</section>
+
     <!-- HERO -->
     <section id="home" class="hero-banner">
       <div class="hero-content">
@@ -36,53 +48,64 @@
         </div>
         <h1 class="hero-title">Take It to the Next Level!</h1>
         <div class="hero-tagline">Where stories come alive at Strathmore University</div>
-        <div class="hero-motto">"Take it to the next level!"</div>
       </div>
     </section>
     <!-- ABOUT US -->
-    <section id="aboutus" class="section">
-      <h2 class="section-header">About Us</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Welcome to <strong>DRAMSOC</strong> – The Strathmore Drama Society, where creativity meets community. We are a passionate group of actors, directors, stage managers, and storytellers dedicated to bringing the magic of theatre to life at Strathmore University.</p>
-          <p>From powerful stage performances to behind-the-scenes creativity, DRAMSOC is more than a club—it's a family. Whether you're an experienced performer or curious about theatre for the first time, we welcome all who share a love for storytelling and artistic expression.</p>
-          <p><strong>Our Mission:</strong> To foster creativity, collaboration, and community through the transformative power of drama and the arts.</p>
-          <p><strong>Our Vision:</strong> To be a leading creative hub at Strathmore University, inspiring students to explore their talents and share meaningful stories.</p>
-        </div>
-        <div class="about-images">
-          <img src="images/about-1.jpg" alt="DRAMSOC Performance" />
-          <img src="images/about-2.jpg" alt="DRAMSOC Rehearsal" />
-        </div>
-      </div>
-    </section>
-    <div class="divider"></div>
-    <!-- TEAM -->
-    <section id="team" class="section">
-      <h2 class="section-header">Meet the Team</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <img src="images/team/president.jpg" alt="President" />
-          <h3>President</h3>
-          <p>Leads the society vision and operations.</p>
-        </div>
-        <div class="team-member">
-          <img src="images/team/vp.jpg" alt="Vice President" />
-          <h3>Vice President</h3>
-          <p>Supports leadership and coordinates projects.</p>
-        </div>
-        <div class="team-member">
-          <img src="images/team/treasurer.jpg" alt="Treasurer" />
-          <h3>Treasurer</h3>
-          <p>Manages finances and budgets.</p>
-        </div>
-        <div class="team-member">
-          <img src="images/team/secretary.jpg" alt="Secretary" />
-          <h3>Secretary</h3>
-          <p>Handles communications and records.</p>
-        </div>
-      </div>
-    </section>
-    <div class="divider"></div>
+    <section id="about" class="info-section">
+  <h2>About Us</h2>
+  <div class="about-row">
+    <div class="about-card">
+      <h3>Mission</h3>
+      <p>Enhance and encourage teamwork, improve quality of life by nurturing talent through theatrical and community life.</p>
+    </div>
+    <div class="about-card">
+      <h3>Vision</h3>
+      <p>To be a premier arts institution inspiring creativity, fostering cultural dialogue, and empowering individuals.</p>
+    </div>
+    <div class="about-card">
+      <h3>Motto</h3>
+      <p>"Take it to the next level!"</p>
+    </div>
+  </div>
+</section> 
+    <!-- RECENT PRODUCTIONS -->
+    <section id="productions" class="card-section">
+  <div class="prod-row">
+    <div class="prod-card">
+      <img src="images/major-barbara.jpg" alt="Major Barbara Poster">
+      <h3>Major Barbara</h3>
+      <p>Date: March 2025</p>
+      <p>A classic work brought to vibrant life.</p>
+      <button onclick="showModal('major-barbara')">Learn More</button>
+    </div>
+    <div class="prod-card">
+      <img src="images/homecoming.jpg" alt="Homecoming Poster">
+      <h3>The Homecoming</h3>
+      <p>Date: April 2025</p>
+      <p>A tale of family, secrets, and returning home.</p>
+      <button onclick="showModal('homecoming')">Learn More</button>
+    </div>
+    <div class="prod-card">
+      <img src="images/waiting-room.jpg" alt="Waiting Room Poster">
+      <h3>The Waiting Room</h3>
+      <p>Date: Sept 2025</p>
+      <p>Exploring the human experience through anticipation.</p>
+      <button onclick="showModal('waiting-room')">Learn More</button>
+    </div>
+    <div class="prod-card">
+      <img src="images/The Samaritan (1).jpg" alt="Samaritan Poster">
+      <h3>The Samaritan</h3>
+      <p>Date: 2024</p>
+      <p>A story of kindness, morality, and fighting corruption.</p>
+      <button onclick="showModal('samaritan')">Learn More</button>
+    </div>
+  </div>
+</section>
+<script>
+function showModal(key) { document.getElementById('modal-'+key).style.display='block'; }
+function closeModal(key) { document.getElementById('modal-'+key).style.display='none'; }
+</script>
+
     <!-- DEPARTMENTS -->
     <section id="departments" class="section">
       <h2 class="section-header">Our Departments</h2>
@@ -188,19 +211,19 @@
       </div>
     </section>
     <!-- FOOTER -->
-    <div class="footer-bar">
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#aboutus">About Us</a>
-        <a href="#team">Team</a>
-        <a href="#departments">Departments</a>
-        <a href="#alumni">Alumni</a>
-        <a href="#articles">Articles</a>
-        <a href="#contact">Contact</a>
-        <a href="#joinus">Join Us</a>
-      </div>
-      <div class="copyright">© 2025 Strathmore Drama Society. All rights reserved.</div>
-      <div class="footer-links">Partners: Strathmore University • Wangudi Inc • Igiza Arts</div>
-    </div>
-</body>
-</html>
+    <footer class="footer">
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#departments">Departments</a>
+    <a href="#alumni">Alumni</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+    <a href="#join">Join Us</a>
+  </div>
+  <div class="copyright">&copy; 2025 Strathmore Drama Society. All rights reserved.</div>
+  <div class="footer-links">
+    Partners: Strathmore University &middot; Wangudi Inc &middot; Igiza Arts
+  </div>
+</footer>
