@@ -1,229 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strathmore Drama Society - DRAMSOC</title>
-    <meta name="description" content="Where stories come alive at Strathmore University. Join DRAMSOC for vibrant theatre, productions, and creative community events." />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/dramsoc-logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strathmore Drama Society - DRAMSOC</title>
+  <meta name="description" content="Where stories come alive at Strathmore University. Team, productions, alumni, articles, and more!">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/dramsoc-logo.png">
 </head>
 <body>
-   <header>
-  <nav class="navbar">
-    <div class="nav-logo">
-      <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="logo-img">
-      <span class="nav-title">Strathmore Drama Society</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#productions">Productions</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#departments">Departments</a></li>
-      <li><a href="#alumni">Alumni</a></li>
-      <li><a href="#articles">Articles</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#join">Join Us</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- HEADER + NAV -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="logo-img">
+        <span class="nav-title">Strathmore Drama Society</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#productions">Productions</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#alumni">Alumni</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#join">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="hero-section">
-  <div class="hero-content">
-    <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="hero-logo">
-    <h1 class="hero-heading">Take It to the Next Level!</h1>
-    <p class="hero-subheading">Where stories come alive at Strathmore University</p>
-    <div class="hero-cta">
-      <a href="#productions" class="btn btn-hero">View Productions</a>
-      <a href="#join" class="btn btn-outline">Join Us</a>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="hero-logo">
+      <h1 class="hero-heading">Take It to the Next Level!</h1>
+      <p class="hero-subheading">Where stories come alive at Strathmore University</p>
+      <div class="hero-cta">
+        <a href="#productions" class="btn btn-hero">View Productions</a>
+        <a href="#join" class="btn btn-outline">Join Us</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- HERO -->
-    <section id="home" class="hero-banner">
-      <div class="hero-content">
-        <div class="hero-logo">
-          <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" style="max-width: 300px; height: auto;" />
-        </div>
-        <h1 class="hero-title">Take It to the Next Level!</h1>
-        <div class="hero-tagline">Where stories come alive at Strathmore University</div>
+  <!-- ABOUT US -->
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <div class="about-row">
+      <div class="about-card">
+        <h3>Mission</h3>
+        <p>Enhance and encourage teamwork, improve quality of life by nurturing talent through theatrical and community life.</p>
       </div>
-    </section>
-    <!-- ABOUT US -->
-    <section id="about" class="info-section">
-  <h2>About Us</h2>
-  <div class="about-row">
-    <div class="about-card">
-      <h3>Mission</h3>
-      <p>Enhance and encourage teamwork, improve quality of life by nurturing talent through theatrical and community life.</p>
+      <div class="about-card">
+        <h3>Vision</h3>
+        <p>To be a premier arts institution inspiring creativity, fostering cultural dialogue, and empowering individuals.</p>
+      </div>
+      <div class="about-card">
+        <h3>Motto</h3>
+        <p>"Take it to the next level!"</p>
+      </div>
     </div>
-    <div class="about-card">
-      <h3>Vision</h3>
-      <p>To be a premier arts institution inspiring creativity, fostering cultural dialogue, and empowering individuals.</p>
-    </div>
-    <div class="about-card">
-      <h3>Motto</h3>
-      <p>"Take it to the next level!"</p>
-    </div>
-  </div>
-</section> 
-    <!-- RECENT PRODUCTIONS -->
-    <section id="productions" class="card-section">
-  <div class="prod-row">
-    <div class="prod-card">
-      <img src="images/major-barbara.jpg" alt="Major Barbara Poster">
-      <h3>Major Barbara</h3>
-      <p>Date: March 2025</p>
-      <p>A classic work brought to vibrant life.</p>
-      <button onclick="showModal('major-barbara')">Learn More</button>
-    </div>
-    <div class="prod-card">
-      <img src="images/homecoming.jpg" alt="Homecoming Poster">
-      <h3>The Homecoming</h3>
-      <p>Date: April 2025</p>
-      <p>A tale of family, secrets, and returning home.</p>
-      <button onclick="showModal('homecoming')">Learn More</button>
-    </div>
-    <div class="prod-card">
-      <img src="images/waiting-room.jpg" alt="Waiting Room Poster">
-      <h3>The Waiting Room</h3>
-      <p>Date: Sept 2025</p>
-      <p>Exploring the human experience through anticipation.</p>
-      <button onclick="showModal('waiting-room')">Learn More</button>
-    </div>
-    <div class="prod-card">
-      <img src="images/The Samaritan (1).jpg" alt="Samaritan Poster">
-      <h3>The Samaritan</h3>
-      <p>Date: 2024</p>
-      <p>A story of kindness, morality, and fighting corruption.</p>
-      <button onclick="showModal('samaritan')">Learn More</button>
-    </div>
-  </div>
-</section>
-<script>
-function showModal(key) { document.getElementById('modal-'+key).style.display='block'; }
-function closeModal(key) { document.getElementById('modal-'+key).style.display='none'; }
-</script>
+  </section>
 
-    <!-- DEPARTMENTS -->
-    <section id="departments" class="section">
-      <h2 class="section-header">Our Departments</h2>
-      <div class="departments-grid">
-        <div class="department-card">
-          <h3>Acting</h3>
-          <p>Bring characters to life on stage through emotion and expression.</p>
-        </div>
-        <div class="department-card">
-          <h3>Directing</h3>
-          <p>Guide the creative vision of our productions from script to stage.</p>
-        </div>
-        <div class="department-card">
-          <h3>Stage Management</h3>
-          <p>Coordinate logistics, rehearsals, and technical execution.</p>
-        </div>
-        <div class="department-card">
-          <h3>Set &amp; Props</h3>
-          <p>Design and build immersive worlds for our stories.</p>
-        </div>
-        <div class="department-card">
-          <h3>Costume &amp; Makeup</h3>
-          <p>Transform actors with visual storytelling through wardrobe and makeup.</p>
-        </div>
-        <div class="department-card">
-          <h3>Lighting &amp; Sound</h3>
-          <p>Create atmosphere and mood through technical artistry.</p>
-        </div>
+  <!-- PRODUCTIONS -->
+  <section id="productions" class="card-section">
+    <h2>Featured Productions</h2>
+    <div class="prod-row">
+      <div class="prod-card">
+        <img src="images/major-barbara.jpg" alt="Major Barbara Poster">
+        <h3>Major Barbara</h3>
+        <p>Date: March 2025</p>
+        <p>A classic work brought to vibrant life.</p>
+        <button onclick="showModal('major-barbara')">Learn More</button>
       </div>
-    </section>
-    <div class="divider"></div>
-    <!-- ALUMNI -->
-    <section id="alumni" class="section">
-      <h2 class="section-header">Alumni Network</h2>
-      <div class="alumni-content">
-        <p>Our alumni have gone on to pursue remarkable careers in theatre, film, media, and beyond. DRAMSOC is proud to have been a launching pad for creative talent.</p>
-        <div class="alumni-grid">
-          <div class="alumni-card">
-            <img src="images/alumni/alumni-1.jpg" alt="Alumni 1" />
-            <p><strong>Alumni Name</strong></p>
-            <p>Film Director</p>
-          </div>
-          <div class="alumni-card">
-            <img src="images/alumni/alumni-2.jpg" alt="Alumni 2" />
-            <p><strong>Alumni Name</strong></p>
-            <p>Theatre Producer</p>
-          </div>
-          <div class="alumni-card">
-            <img src="images/alumni/alumni-3.jpg" alt="Alumni 3" />
-            <p><strong>Alumni Name</strong></p>
-            <p>Media Personality</p>
-          </div>
-        </div>
+      <div class="prod-card">
+        <img src="images/homecoming.jpg" alt="Homecoming Poster">
+        <h3>The Homecoming</h3>
+        <p>Date: April 2025</p>
+        <p>A tale of family, secrets, and returning home.</p>
+        <button onclick="showModal('homecoming')">Learn More</button>
       </div>
-    </section>
-    <div class="divider"></div>
-    <!-- ARTICLES -->
-    <section id="articles" class="section">
-      <h2 class="section-header">Articles &amp; Updates</h2>
-      <div class="articles-grid">
-        <div class="article-card">
-          <img src="images/articles/article-1.jpg" alt="Article 1" />
-          <h3>DRAMSOC Presents: [Production Title]</h3>
-          <p>Read about our latest production and what went into bringing it to life.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="article-card">
-          <img src="images/articles/article-2.jpg" alt="Article 2" />
-          <h3>Behind the Scenes</h3>
-          <p>Get an exclusive look at what happens backstage during rehearsals.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="article-card">
-          <img src="images/articles/article-3.jpg" alt="Article 3" />
-          <h3>Alumni Spotlight</h3>
-          <p>Catching up with our alumni and their journeys post-DRAMSOC.</p>
-          <a href="#">Read More</a>
-        </div>
+      <div class="prod-card">
+        <img src="images/waiting-room.jpg" alt="Waiting Room Poster">
+        <h3>The Waiting Room</h3>
+        <p>Date: Sept 2025</p>
+        <p>Exploring the human experience through anticipation.</p>
+        <button onclick="showModal('waiting-room')">Learn More</button>
       </div>
-    </section>
-    <div class="divider"></div>
-    <!-- CONTACT & JOIN US -->
-    <section id="contact" class="section contact-section">
-      <div class="contact-info">
-        <h2 class="section-header">Contact Us</h2>
-        Email: dramsoc@strathmore.edu
-        <div class="social-icons">
-          <a href="https://instagram.com/strathmore.drama.society" target="_blank" title="Instagram">IG</a>
-          <a href="https://youtube.com/@StrathmoreDramaSociety" target="_blank" title="YouTube">YT</a>
-          <a href="https://tiktok.com/@strathmore.drama.society" target="_blank" title="TikTok">TT</a>
-        </div>
-        <div class="map-placeholder">Strathmore University, Ole Sangale Rd, Madaraka, Nairobi</div>
+      <div class="prod-card">
+        <img src="images/The Samaritan (1).jpg" alt="Samaritan Poster">
+        <h3>The Samaritan</h3>
+        <p>Date: 2024</p>
+        <p>A story of kindness, morality, and fighting corruption.</p>
+        <button onclick="showModal('samaritan')">Learn More</button>
       </div>
-      <div class="join-form">
-        <h2 class="section-header">Join Us</h2>
-        <form>
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email Address" required />
-          <textarea name="interests" rows="3" placeholder="Tell us your interest in drama..." required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        <!-- For Google Forms: replace above with your embed code -->
+    </div>
+  </section>
+  <!-- Modals for Production Details -->
+  <div id="modal-major-barbara" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('major-barbara')" class="close">&times;</span>
+      <h2>Major Barbara</h2>
+      <h3>Writer: [Writer]</h3>
+      <h3>Director: [Director]</h3>
+      <p>[Synopsis for Major Barbara]</p>
+      <div class="prod-gallery">
+        <img src="images/major-barbara.jpg" alt="Major Barbara Poster">
       </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-  <div class="footer-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#team">Team</a>
-    <a href="#departments">Departments</a>
-    <a href="#alumni">Alumni</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
-    <a href="#join">Join Us</a>
+    </div>
   </div>
-  <div class="copyright">&copy; 2025 Strathmore Drama Society. All rights reserved.</div>
-  <div class="footer-links">
-    Partners: Strathmore University &middot; Wangudi Inc &middot; Igiza Arts
+  <div id="modal-homecoming" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('homecoming')" class="close">&times;</span>
+      <h2>The Homecoming</h2>
+      <h3>Writer: [Writer]</h3>
+      <h3>Director: [Director]</h3>
+      <p>[Synopsis for Homecoming]</p>
+      <div class="prod-gallery">
+        <img src="images/homecoming.jpg" alt="Homecoming Poster">
+      </div>
+    </div>
   </div>
-</footer>
+  <div id="modal-waiting-room" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('waiting-room')" class="close">&times;</span>
+      <h2>The Waiting Room</h2>
+      <h3>Writer: [Writer]</h3>
+      <h3>Director: [Director]</h3>
+      <p>[Synopsis for Waiting Room]</p>
+      <div class="prod-gallery">
+        <img src="images/waiting-room.jpg" alt="Waiting Room Poster">
+      </div>
+    </div>
+  </div>
+  <div id="modal-samaritan" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('samaritan')" class="close">&times;</span>
+      <h2>The Samaritan</h2>
+      <h3>Writer: [Writer]</h3>
+      <h3>Director: [Director]</h3>
+      <p>[Synopsis for Samaritan]</p>
+      <div class="prod-gallery">
+        <img src="images/The Samaritan (1).jpg" alt="Samaritan Poster">
+      </div>
+    </div>
+  </div>
+  <script>
+  function showModal(key){document.getElementById('modal-'+key).style.display='flex';}
+  function closeModal(key){document.getElementById('modal-'+key).style.display='none';}
+  </script>
+
+  <!-- TEAM -->
+  <section id="team" class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-row">
+      <div class="team-card">
+        <img src="images/Dan Kakuru.png" alt="Dan Kakuru">
+        <div class="team-name">Dan Kakuru</div>
+        <div class="team-role">President</div>
+        <p>Visionary leader and performer.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Leila Kaisa.png" alt="Leila Kaisa">
+        <div class="team-name">Leila Kaisa</div>
+        <div class="team-role">Vice President</div>
+        <p>Innovative guiding force for the arts.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Joe Abala.png" alt="Joe Abala">
+        <div class="team-name">Joe Abala</div>
+        <div class="team-role">Organizing Secretary</div>
+        <p>Logistics expert for smooth productions.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Cherise Chomba.png" alt="Cherise Chomba">
+        <div class="team-name">Cherise Chomba</div>
+        <div class="team-role">Secretary General</div>
+        <p>Communications and creative coordination.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Paula Nimurungi.png" alt="Paula Nimurungi">
+        <div class="team-name">Paula Nimurungi</div>
+        <div class="team-role">Financial Manager</div>
+        <p>Resource steward for ambitious projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section id="departments" class="info-section">
+    <h2>Departments</h2>
+    <div class="info-row">
+      <div class="info-card
