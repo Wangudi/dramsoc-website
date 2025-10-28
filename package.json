@@ -1,7 +1,6 @@
 {
   "name": "dramsoc-website",
   "version": "1.0.0",
-  "homepage": "https://wangudi.github.io/dramsoc-website",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
