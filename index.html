@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strathmore Drama Society - DRAMSOC</title>
-    <base href="/" />
+    <link rel="canonical" href="/">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -36,20 +36,27 @@
 
         <section id="about" class="about">
             <div class="container">
-                <h2>About DRAMSOC</h2>
-                <p>The Strathmore Drama Society (DRAMSOC) is a vibrant community of passionate performers, directors, writers, and theater enthusiasts. We are dedicated to creating memorable theatrical experiences and fostering artistic growth among our members.</p>
-                <div class="features">
-                    <div class="feature">
+                <div class="section-header">
+                    <h2>About DRAMSOC</h2>
+                    <p class="section-subtitle">Passionate performers, dedicated to excellence</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
                         <h3>Our Mission</h3>
-                        <p>To inspire, educate, and entertain through the art of theater while providing a platform for creative expression.</p>
+                        <p>The Strathmore Drama Society (DRAMSOC) is dedicated to fostering creativity, building confidence, and creating unforgettable theatrical experiences. We provide a platform for students to explore their artistic talents and develop their performance skills.</p>
+                        
+                        <h3>What We Offer</h3>
+                        <ul class="features-list">
+                            <li>Professional theater training and workshops</li>
+                            <li>Original and classic play productions</li>
+                            <li>Acting, directing, and technical theater skills development</li>
+                            <li>Performance opportunities for all skill levels</li>
+                            <li>Collaborative creative environment</li>
+                            <li>Community outreach programs</li>
+                        </ul>
                     </div>
-                    <div class="feature">
-                        <h3>What We Do</h3>
-                        <p>We produce plays, workshops, and events that showcase the diverse talents of Strathmore University students.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Join Us</h3>
-                        <p>Whether you're an experienced performer or new to theater, there's a place for you in DRAMSOC.</p>
+                    <div class="about-image">
+                        <img src="./images/about-theater.jpg" alt="Students performing on stage" class="about-img">
                     </div>
                 </div>
             </div>
@@ -57,16 +64,45 @@
 
         <section id="productions" class="productions">
             <div class="container">
-                <h2>Our Productions</h2>
-                <p>Explore our past and upcoming theatrical productions that have captivated audiences at Strathmore University.</p>
-                <div class="production-grid">
+                <div class="section-header">
+                    <h2>Our Productions</h2>
+                    <p class="section-subtitle">Bringing stories to life on stage</p>
+                </div>
+                <div class="productions-grid">
                     <div class="production-card">
-                        <h3>Recent Productions</h3>
-                        <p>From classic plays to contemporary works, we bring diverse stories to the stage with passion and creativity.</p>
+                        <div class="production-image">
+                            <img src="./images/production-1.jpg" alt="Romeo and Juliet production" class="production-img">
+                        </div>
+                        <div class="production-info">
+                            <h3>Romeo and Juliet</h3>
+                            <p class="production-date">March 2024</p>
+                            <p>Shakespeare's timeless tale of love and tragedy, reimagined for the modern stage with powerful performances and stunning visuals.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
                     </div>
+                    
                     <div class="production-card">
-                        <h3>Upcoming Shows</h3>
-                        <p>Stay tuned for our exciting lineup of upcoming performances and events throughout the academic year.</p>
+                        <div class="production-image">
+                            <img src="./images/production-2.jpg" alt="The Lion King musical" class="production-img">
+                        </div>
+                        <div class="production-info">
+                            <h3>The Lion King</h3>
+                            <p class="production-date">November 2023</p>
+                            <p>A spectacular musical adaptation featuring original choreography, vibrant costumes, and unforgettable performances.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="production-card">
+                        <div class="production-image">
+                            <img src="./images/production-3.jpg" alt="Original play production" class="production-img">
+                        </div>
+                        <div class="production-info">
+                            <h3>Voices of Tomorrow</h3>
+                            <p class="production-date">June 2023</p>
+                            <p>An original play exploring contemporary issues through compelling storytelling and innovative theatrical techniques.</p>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,30 +110,124 @@
 
         <section id="team" class="team">
             <div class="container">
-                <h2>Our Team</h2>
-                <p>Meet the dedicated individuals who make DRAMSOC possible through their talent, leadership, and commitment to excellence in theater.</p>
-                <div class="team-info">
-                    <p>Our team consists of executive members, directors, actors, technical crew, and support staff who work together to create amazing theatrical experiences.</p>
+                <div class="section-header">
+                    <h2>Our Team</h2>
+                    <p class="section-subtitle">Meet the creative minds behind DRAMSOC</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="./images/team-director.jpg" alt="Sarah Wanjiku - Artistic Director" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Wanjiku</h3>
+                            <p class="member-role">Artistic Director</p>
+                            <p>Leading our creative vision with over 8 years of theater experience and a passion for developing young talent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="./images/team-president.jpg" alt="James Mwangi - President" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h3>James Mwangi</h3>
+                            <p class="member-role">President</p>
+                            <p>Coordinating our activities and ensuring every member has the opportunity to shine on and off stage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="./images/team-technical.jpg" alt="Grace Ochieng - Technical Director" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h3>Grace Ochieng</h3>
+                            <p class="member-role">Technical Director</p>
+                            <p>Managing lighting, sound, and set design to create immersive theatrical experiences for our audiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="./images/team-choreographer.jpg" alt="David Kiprop - Choreographer" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h3>David Kiprop</h3>
+                            <p class="member-role">Choreographer</p>
+                            <p>Creating dynamic movement and dance sequences that bring energy and life to our productions.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Interested in joining DRAMSOC or learning more about our productions? We'd love to hear from you!</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email Us</h3>
-                        <p>dramsoc@strathmore.edu</p>
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p class="section-subtitle">Ready to join our theatrical family?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Join DRAMSOC Today</h3>
+                        <p>Whether you're an experienced performer or just starting your theatrical journey, we welcome you to be part of our creative community.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h4>Meeting Times</h4>
+                                <p>Wednesdays & Fridays<br>4:00 PM - 6:00 PM</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>Location</h4>
+                                <p>Strathmore University<br>Drama Studio, Arts Block</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>Contact</h4>
+                                <p>Email: dramsoc@strathmore.edu<br>Phone: +254 703 034 000</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Follow Us</h3>
-                        <p>Stay connected on social media for updates and behind-the-scenes content.</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Visit Us</h3>
-                        <p>Strathmore University<br>Ole Sangale Road, Madaraka<br>Nairobi, Kenya</p>
+                    
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="interest">Area of Interest</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select your interest</option>
+                                    <option value="acting">Acting</option>
+                                    <option value="directing">Directing</option>
+                                    <option value="technical">Technical Theater</option>
+                                    <option value="writing">Scriptwriting</option>
+                                    <option value="general">General Participation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your theater experience or what interests you about DRAMSOC..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -106,8 +236,41 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Strathmore Drama Society (DRAMSOC). All rights reserved.</p>
-            <p>Strathmore University | Nairobi, Kenya</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">DRAMSOC</div>
+                    <p>Strathmore University's premier drama society, where creativity meets performance.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#productions">Productions</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>dramsoc@strathmore.edu<br>+254 703 034 000</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Strathmore Drama Society. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
