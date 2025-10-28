@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strathmore Drama Society - DRAMSOC</title>
-  <meta name="description" content="Where stories come alive at Strathmore University. Team, productions, alumni, articles, and more!">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/dramsoc-logo.png">
 </head>
 <body>
-  <!-- HEADER + NAV -->
   <header>
     <nav class="navbar">
       <div class="nav-logo">
@@ -29,21 +27,19 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero-section">
-    <div class="hero-content">
+    <div>
       <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" class="hero-logo">
       <h1 class="hero-heading">Take It to the Next Level!</h1>
       <p class="hero-subheading">Where stories come alive at Strathmore University</p>
       <div class="hero-cta">
-        <a href="#productions" class="btn btn-hero">View Productions</a>
-        <a href="#join" class="btn btn-outline">Join Us</a>
+        <a href="#productions" class="btn">View Productions</a>
+        <a href="#join" class="btn-outline">Join Us</a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT US -->
-  <section id="about" class="info-section">
+  <section id="about">
     <h2>About Us</h2>
     <div class="about-row">
       <div class="about-card">
@@ -61,8 +57,7 @@
     </div>
   </section>
 
-  <!-- PRODUCTIONS -->
-  <section id="productions" class="card-section">
+  <section id="productions">
     <h2>Featured Productions</h2>
     <div class="prod-row">
       <div class="prod-card">
@@ -100,57 +95,21 @@
     <div class="modal-content">
       <span onclick="closeModal('major-barbara')" class="close">&times;</span>
       <h2>Major Barbara</h2>
-      <h3>Writer: [Writer]</h3>
-      <h3>Director: [Director]</h3>
-      <p>[Synopsis for Major Barbara]</p>
+      <h3>Writer: [Writer Name]</h3>
+      <h3>Director: [Director Name]</h3>
+      <p>[Full synopsis here]</p>
       <div class="prod-gallery">
         <img src="images/major-barbara.jpg" alt="Major Barbara Poster">
       </div>
     </div>
   </div>
-  <div id="modal-homecoming" class="modal">
-    <div class="modal-content">
-      <span onclick="closeModal('homecoming')" class="close">&times;</span>
-      <h2>The Homecoming</h2>
-      <h3>Writer: [Writer]</h3>
-      <h3>Director: [Director]</h3>
-      <p>[Synopsis for Homecoming]</p>
-      <div class="prod-gallery">
-        <img src="images/homecoming.jpg" alt="Homecoming Poster">
-      </div>
-    </div>
-  </div>
-  <div id="modal-waiting-room" class="modal">
-    <div class="modal-content">
-      <span onclick="closeModal('waiting-room')" class="close">&times;</span>
-      <h2>The Waiting Room</h2>
-      <h3>Writer: [Writer]</h3>
-      <h3>Director: [Director]</h3>
-      <p>[Synopsis for Waiting Room]</p>
-      <div class="prod-gallery">
-        <img src="images/waiting-room.jpg" alt="Waiting Room Poster">
-      </div>
-    </div>
-  </div>
-  <div id="modal-samaritan" class="modal">
-    <div class="modal-content">
-      <span onclick="closeModal('samaritan')" class="close">&times;</span>
-      <h2>The Samaritan</h2>
-      <h3>Writer: [Writer]</h3>
-      <h3>Director: [Director]</h3>
-      <p>[Synopsis for Samaritan]</p>
-      <div class="prod-gallery">
-        <img src="images/The Samaritan (1).jpg" alt="Samaritan Poster">
-      </div>
-    </div>
-  </div>
+  <!-- Repeat modal blocks for all other productions here -->
   <script>
-  function showModal(key){document.getElementById('modal-'+key).style.display='flex';}
-  function closeModal(key){document.getElementById('modal-'+key).style.display='none';}
+    function showModal(key){document.getElementById('modal-'+key).style.display='flex';}
+    function closeModal(key){document.getElementById('modal-'+key).style.display='none';}
   </script>
 
-  <!-- TEAM -->
-  <section id="team" class="team-section">
+  <section id="team">
     <h2>Our Team</h2>
     <div class="team-row">
       <div class="team-card">
@@ -186,75 +145,38 @@
     </div>
   </section>
 
-  <!-- DEPARTMENTS -->
-  <section id="departments" class="info-section">
+  <section id="departments">
     <h2>Departments</h2>
     <div class="info-row">
-      <div class="info-card">
-        <h3>Directing</h3><p>Creative vision and actor coordination.</p>
-      </div>
-      <div class="info-card">
-        <h3>Production</h3><p>Set, props, costumes, backstage ops.</p>
-      </div>
-      <div class="info-card">
-        <h3>Technical</h3><p>Lighting, sound, technical drama effects.</p>
-      </div>
-      <div class="info-card">
-        <h3>PR/Marketing</h3><p>Promotions, engagement, audience building.</p>
-      </div>
-      <div class="info-card">
-        <h3>Training/Development</h3><p>Workshops, new talent nurturing.</p>
-      </div>
-      <div class="info-card">
-        <h3>Finance/Sponsorship</h3><p>Budget, fundraising, partnerships.</p>
-      </div>
-      <div class="info-card">
-        <h3>Scriptwriting/Research</h3><p>Scripts and new material research.</p>
-      </div>
-      <div class="info-card">
-        <h3>Costume/Makeup</h3><p>Design, transformation for each show.</p>
-      </div>
+      <div class="info-card"><h3>Directing</h3><p>Creative vision and actor coordination.</p></div>
+      <div class="info-card"><h3>Production</h3><p>Set, props, costumes, backstage ops.</p></div>
+      <div class="info-card"><h3>Technical</h3><p>Lighting, sound, technical drama effects.</p></div>
+      <div class="info-card"><h3>PR/Marketing</h3><p>Promotions, engagement, audience building.</p></div>
+      <div class="info-card"><h3>Training/Development</h3><p>Workshops, new talent nurturing.</p></div>
+      <div class="info-card"><h3>Finance/Sponsorship</h3><p>Budget, fundraising, partnerships.</p></div>
+      <div class="info-card"><h3>Scriptwriting/Research</h3><p>Scripts and new material research.</p></div>
+      <div class="info-card"><h3>Costume/Makeup</h3><p>Design, transformation for each show.</p></div>
     </div>
   </section>
 
-  <!-- ALUMNI -->
-  <section id="alumni" class="info-section">
+  <section id="alumni">
     <h2>Alumni</h2>
     <div class="info-row">
-      <div class="info-card">
-        <h3>Alex M.</h3>
-        <p>Film industry leader in Kenya.</p>
-      </div>
-      <div class="info-card">
-        <h3>Betty K.</h3>
-        <p>Director, Igiza Arts. Inspiring new drama talent.</p>
-      </div>
-      <!-- Add more alumni here -->
+      <div class="info-card"><h3>Alex M.</h3><p>Film industry leader in Kenya.</p></div>
+      <div class="info-card"><h3>Betty K.</h3><p>Director, Igiza Arts. Inspiring new drama talent.</p></div>
     </div>
   </section>
 
-  <!-- ARTICLES & UPDATES -->
-  <section id="articles" class="info-section">
+  <section id="articles">
     <h2>Articles & Updates</h2>
     <div class="info-row">
-      <div class="info-card">
-        <h3>Behind the Scene</h3>
-        <p>Challenges and triumphs bringing 'Homecoming' to life.</p>
-      </div>
-      <div class="info-card">
-        <h3>Actor's Journal: Paula’s Journey</h3>
-        <p>From auditions to opening night; Paula's insights.</p>
-      </div>
-      <div class="info-card">
-        <h3>Society News</h3>
-        <p>DRAMSOC welcomes new members for 2025.</p>
-      </div>
-      <!-- Add more articles here -->
+      <div class="info-card"><h3>Behind the Scene</h3><p>Challenges and triumphs bringing 'Homecoming' to life.</p></div>
+      <div class="info-card"><h3>Actor's Journal: Paula’s Journey</h3><p>From auditions to opening night; Paula's insights.</p></div>
+      <div class="info-card"><h3>Society News</h3><p>DRAMSOC welcomes new members for 2025.</p></div>
     </div>
   </section>
 
-  <!-- CONTACT & JOIN US -->
-  <section id="contact" class="info-section">
+  <section id="contact">
     <h2>Contact Us</h2>
     <div>Email: dramsoc@strathmore.edu</div>
     <div class="footer-links" style="margin-top:12px;">
@@ -262,23 +184,21 @@
       <a href="https://youtube.com/@StrathmoreDramaSociety" target="_blank">YouTube</a>
       <a href="https://tiktok.com/@strathmore.drama.society" target="_blank">TikTok</a>
     </div>
-    <div style="color:#FFD700; margin-top:8px;">
+    <div style="color:#fdc900; margin-top:8px;">
       Strathmore University, Ole Sangale Rd, Madaraka, Nairobi
     </div>
   </section>
 
-  <section id="join" class="info-section">
+  <section id="join">
     <h2>Join Us</h2>
     <form>
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <textarea name="interests" placeholder="Tell us your interest in drama..." rows="3" required></textarea>
       <button type="submit">Submit</button>
-      <!-- For Google Forms: replace above with your embed code -->
     </form>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-links">
       <a href="#home">Home</a>
