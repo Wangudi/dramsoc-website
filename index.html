@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#B80000">
-    <meta name="description" content="About Strathmore Drama Society - Where stories come alive at Strathmore University">
-    <title>About Us - Strathmore Drama Society - DRAMSOC</title>
+    <meta name="description" content="Strathmore Drama Society - Where stories come alive at Strathmore University">
+    <title>Strathmore Drama Society - DRAMSOC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,23 +16,20 @@
         <!-- Navigation Bar -->
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="index.html" class="navbar-logo">DRAMSOC</a>
+                <a href="#" class="navbar-logo">DRAMSOC</a>
                 <div class="navbar-content">
                     <ul class="nav-menu" id="nav-menu">
                         <li class="nav-item">
-                            <a href="index.html#home" class="nav-button">🏠 Home</a>
+                            <a href="#home" class="nav-button">🏠 Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-button">ℹ️ About</a>
+                            <a href="#productions" class="nav-button">🎭 Productions</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html#productions" class="nav-button">🎭 Productions</a>
+                            <a href="#team" class="nav-button">👥 Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html#team" class="nav-button">👥 Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#contact" class="nav-button">📧 Contact Us</a>
+                            <a href="#contact" class="nav-button">📧 Contact Us</a>
                         </li>
                     </ul>
                     <div class="social-media-buttons">
@@ -45,73 +42,80 @@
             </div>
         </nav>
 
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <img src="images/dramsoc-logo.png" alt="DRAMSOC Logo" style="width: 120px; height: 120px; border-radius: 15px; margin-bottom: 20px;">
+            <h1>Take It to the Next Level!</h1>
+            <p>Where stories come alive at Strathmore University</p>
+            <a href="#contact" class="cta-button">Join Us Today</a>
+
+            <!-- Quick Links Section -->
+            <div style="margin-top: 60px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#productions" class="cta-button" style="background-color: transparent; border: 2px solid gold; color: gold;">🎭 Productions</a>
+                <a href="#team" class="cta-button" style="background-color: transparent; border: 2px solid gold; color: gold;">👥 Our Team</a>
+                <a href="#contact" class="cta-button" style="background-color: transparent; border: 2px solid gold; color: gold;">📧 Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Upcoming Plays Section -->
+        <section class="section">
+            <h2>Upcoming Plays/Events</h2>
+            <div class="upcoming-notice">
+                <p>No updates at the moment. Please check back later.</p>
+            </div>
+        </section>
+
         <!-- About Us Section -->
-        <section class="section about-page">
-            <h2>About Strathmore Drama Society</h2>
-            <p style="text-align: center; color: gold; font-size: 1.3rem; margin-bottom: 40px;">Where Stories Come Alive at Strathmore University</p>
-
-            <h3>Who We Are</h3>
-            <p>Strathmore Drama Society (DRAMSOC) is the premier theatrical organization at Strathmore University, dedicated to fostering artistic excellence, creative expression, and theatrical innovation. Since our inception, we have been the beating heart of dramatic arts at Strathmore, bringing together talented students, passionate mentors, and theatre enthusiasts to create unforgettable performances.</p>
-
+        <section class="section" id="about">
+            <h2>About Us</h2>
             <h3>Our Mission</h3>
-            <p>To nurture theatrical talent, produce world-class productions, and use drama as a tool for education, entertainment, and social transformation within the Strathmore community and beyond.</p>
-
+            <p>to enhance and encourage teamwork, improve the quality of life by building, developing and nurturing talent through social, theatrical and community life at large.</p>
+            
             <h3>Our Vision</h3>
-            <p>To be East Africa's leading university drama society, recognized for excellence in theatrical productions, innovative storytelling, and developing the next generation of theatre practitioners and artists.</p>
-
+            <p>To be a premier arts institution in Kenya and beyond, inspiring creativity, fostering cultural dialogue, and empowering individuals to use the transformative power of theatre and film for personal and societal growth.</p>
+            
             <h3>Our Motto</h3>
-            <p style="color: gold; font-weight: bold; font-size: 1.2rem;">"Where Stories Come Alive"</p>
+            <p>"Take it to the next level!"</p>
+        </section>
 
-            <h3>Our Core Values</h3>
-            <div class="card-grid" style="margin-top: 30px;">
-                <div class="card">
-                    <h4 style="color: gold; margin-bottom: 15px;">Excellence</h4>
-                    <p>We strive for the highest standards in every production, from script selection to final performance.</p>
+        <!-- Featured Productions Section -->
+        <section class="section" id="productions">
+            <h2>Featured Productions</h2>
+            <div class="card-grid">
+                <div class="production-card">
+                    <img src="images/homecoming.jpg" alt="The Homecoming" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>The Homecoming</h3>
+                    <p>A powerful tale of family dynamics, secrets, and the complexities of returning home.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
                 </div>
-                <div class="card">
-                    <h4 style="color: gold; margin-bottom: 15px;">Creativity</h4>
-                    <p>We embrace innovation and encourage original thinking in all aspects of theatrical expression.</p>
+                <div class="production-card">
+                    <img src="images/The Samaritan (1).jpg" alt="The Samaritan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>The Samaritan</h3>
+                    <p>An inspiring story of kindness, morality, and the fight against corruption in modern society.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
                 </div>
-                <div class="card">
-                    <h4 style="color: gold; margin-bottom: 15px;">Collaboration</h4>
-                    <p>We believe in the power of teamwork, bringing together diverse talents to create magical performances.</p>
-                </div>
-                <div class="card">
-                    <h4 style="color: gold; margin-bottom: 15px;">Integrity</h4>
-                    <p>We maintain honesty, professionalism, and ethical standards in all our activities.</p>
+                <div class="production-card">
+                    <img src="images/waiting-room.jpg" alt="The Waiting Room" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>The Waiting Room</h3>
+                    <p>A compelling drama that explores the human experience through the lens of anticipation and uncertainty.</p>
+                    <a href="#" class="learn-more">Learn More →</a>
                 </div>
             </div>
+        </section>
 
-            <h3 style="margin-top: 40px;">What DRAMSOC Does</h3>
-            
-            <h4 style="color: #b80000; font-size: 1.3rem; margin-top: 25px; margin-bottom: 15px;">Productions</h4>
-            <p>We stage multiple high-quality theatrical productions each academic year, ranging from classic plays to contemporary works, African theatre to experimental performances. Our productions showcase student talent in acting, directing, technical theatre, and design.</p>
-
-            <h4 style="color: #b80000; font-size: 1.3rem; margin-top: 25px; margin-bottom: 15px;">Training & Development</h4>
-            <p>We offer comprehensive training in acting techniques, stage management, technical theatre, scriptwriting, and directing. Regular workshops, masterclasses, and mentorship programs help members develop their theatrical skills and artistic vision.</p>
-
-            <h4 style="color: #b80000; font-size: 1.3rem; margin-top: 25px; margin-bottom: 15px;">Community Outreach</h4>
-            <p>We use theatre as a tool for social change, conducting outreach programs in schools, communities, and charitable institutions. Our initiatives include educational theatre, drama therapy sessions, and performances for underprivileged communities.</p>
-
-            <h4 style="color: #b80000; font-size: 1.3rem; margin-top: 25px; margin-bottom: 15px;">Events & Showcases</h4>
-            <p>Beyond major productions, we organize theatre festivals, script reading sessions, open mic nights, and collaborative events with other university societies and external theatre groups.</p>
-
-            <h3 style="margin-top: 40px;">Our Impact</h3>
-            <p>DRAMSOC has produced numerous successful alumni who have gone on to pursue careers in theatre, film, television, and media. We have staged over 50 productions, trained hundreds of students in theatrical arts, and touched thousands of lives through our community outreach programs.</p>
-
-            <h4 style="color: #b80000; font-size: 1.3rem; margin-top: 25px; margin-bottom: 15px;">Community Service: Alice Children's Home</h4>
-            <p>One of our proudest initiatives is our ongoing partnership with Alice Children's Home. Through regular visits, interactive drama sessions, and special performances, we bring joy, education, and creative expression to children in need. Our drama therapy workshops help children develop confidence, communication skills, and emotional expression through the power of theatrical play.</p>
-
-            <h3 style="margin-top: 40px;">Join Our Story</h3>
-            <p>Whether you're an aspiring actor, a technical wizard, a creative writer, or simply passionate about theatre, DRAMSOC welcomes you. Together, we create magic on stage and make stories come alive.</p>
-
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="index.html" class="cta-button">← Back to Home</a>
+        <!-- Behind the Scenes Section -->
+        <section class="section">
+            <h2>Behind the Scenes</h2>
+            <div class="card-grid">
+                <img src="images/The Homecoming Scene 3.jpg" alt="Behind the scenes 1" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <img src="images/The Homecoming Scene 4.jpg" alt="Behind the scenes 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <img src="images/The Homecoming Scene 5.jpg" alt="Behind the scenes 3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <img src="images/The Homecoming Scene 6.jpg" alt="Behind the scenes 4" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer-container">
                 <div class="footer-section">
                     <h3>DRAMSOC</h3>
@@ -121,11 +125,13 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="index.html#team">Team</a></li>
-                        <li><a href="index.html#productions">Productions</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#productions">Productions</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
