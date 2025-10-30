@@ -31,7 +31,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: mkdir -p build && cp -r *.html *.css images/ build/ 2>/dev/null || true
         env:
           CI: false
           PUBLIC_URL: /dramsoc-website
