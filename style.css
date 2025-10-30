@@ -144,4 +144,10 @@ code {
 }
 
 .youtube-button:hover {
-    border-color: rgba(255, 255, 255
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.tiktok-button {
+    background:
