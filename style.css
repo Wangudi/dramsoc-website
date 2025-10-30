@@ -150,4 +150,380 @@ code {
 }
 
 .tiktok-button {
-    background: linear-gradient(135deg,
+    background: linear-gradient(135deg, #000, #00f2ea);
+    color: #fff;
+}
+
+.tiktok-button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.menu-icon {
+    color: gold;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    padding: 5px;
+    z-index: 1000;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #b80000, #111);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: gold;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.cta-button {
+    background-color: #b80000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 15px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: gold;
+    box-shadow: 0 5px 15px rgba(184, 0, 0, 0.3);
+    color: #111;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section h3 {
+    color: #b80000;
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+}
+
+.section p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Upcoming Notice */
+.upcoming-notice {
+    background-color: #1a1a1a;
+    border: 2px solid #b80000;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.upcoming-notice p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+/* Card Grid */
+.card-grid {
+    grid-gap: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #b80000;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: gold;
+    box-shadow: 0 10px 30px rgba(184, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+}
+
+/* Production Cards */
+.production-card {
+    background-color: #1a1a1a;
+    border: 2px solid #b80000;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.production-card h3 {
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.production-card h4 {
+    color: #b80000;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.production-card p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    color: #b80000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: gold;
+}
+
+/* Team Grid */
+.team-grid {
+    grid-gap: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 40px;
+}
+
+.team-member {
+    background-color: #1a1a1a;
+    border: 2px solid #b80000;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-member h3 {
+    color: gold;
+    margin: 15px 0 5px;
+}
+
+.team-member p {
+    color: #b80000;
+    font-style: italic;
+}
+
+/* Forms */
+form {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+input, textarea {
+    background-color: #1a1a1a;
+    border: 2px solid #b80000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: gold;
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    border-top: 3px solid #b80000;
+    color: #fff;
+    margin-top: auto;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    grid-gap: 40px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: gold;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-section h4 {
+    color: #b80000;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a, .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover, .footer-section ul li a:hover {
+    color: gold;
+}
+
+.footer-social-buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.footer-social-button {
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 40px;
+}
+
+.footer-social-button.instagram-button {
+    background: linear-gradient(135deg, #833ab4, #e1306c, #fd1d1d);
+    color: #fff;
+}
+
+.footer-social-button.instagram-button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(131, 58, 180, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.footer-social-button.youtube-button {
+    background: red;
+    color: #fff;
+}
+
+.footer-social-button.youtube-button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.footer-social-button.tiktok-button {
+    background: linear-gradient(135deg, #000, #00f2ea);
+    color: #fff;
+}
+
+.footer-social-button.tiktok-button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 242, 234, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.footer-bottom {
+    border-top: 1px solid #b80000;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        padding: 0 20px;
+    }
+
+    .navbar-content {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .nav-menu {
