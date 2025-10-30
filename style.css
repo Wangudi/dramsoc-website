@@ -526,4 +526,100 @@ input:focus, textarea:focus {
         z-index: 1001;
     }
 
+    /* Alumni Section Styles */
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.alumni-card {
+    background: linear-gradient(135deg, rgba(184, 0, 0, 0.15) 0%, rgba(255, 215, 0, 0.1) 100%);
+    border: 2px solid #B80000;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.alumni-card:hover {
+    transform: translateY(-10px);
+    border-color: #FFD700;
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+}
+
+.alumni-header {
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.alumni-header h3 {
+    color: #FFD700;
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.alumni-role {
+    color: #B80000;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.alumni-achievement {
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 0.95em;
+    font-style: italic;
+    margin: 15px 0;
+    padding-left: 15px;
+    border-left: 3px solid #FFD700;
+}
+
+.alumni-year {
+    color: #999;
+    font-size: 0.85em;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* Production Card Enhancements */
+.production-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.production-card:hover {
+    border-color: #B80000;
+    box-shadow: 0 15px 40px rgba(184, 0, 0, 0.3);
+}
+
+.production-card img {
+    transition: transform 0.4s ease;
+}
+
+.production-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Button Enhancements */
+.cta-button {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
     .nav-menu {
