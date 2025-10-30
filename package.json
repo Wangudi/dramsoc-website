@@ -2,5 +2,8 @@
   "name": "dramsoc-website",
   "version": "1.0.0",
   "description": "Strathmore Drama Society static website",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "echo 'Building...' && echo 'Build complete!'"
+  }
 }
